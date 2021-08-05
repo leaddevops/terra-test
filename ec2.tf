@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "test-instances" {
-  ami  = "ami-02aa7f3de34db391a"
-  count = "4"
+  ami  = "ami-0747bdcabd34c712a"
+  count = "2"
   instance_type = "t2.micro"
   key_name = "du-devops"
   user_data = <<-EOF

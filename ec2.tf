@@ -6,7 +6,7 @@ resource "aws_instance" "test-instances" {
   ami  = "ami-0747bdcabd34c712a"
   count = "2"
   instance_type = "t2.micro"
-  key_name = "du-devops"
+  key_name = "terra"
   user_data = <<-EOF
                 #! /bin/bash
                 sudo apt-get update

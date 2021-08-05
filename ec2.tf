@@ -1,7 +1,5 @@
 provider "aws" {
-  region     = "us-east-1"
-  access_key = "key"
-  secret_key = "secret"
+
 }
 
 resource "aws_instance" "test-instances" {

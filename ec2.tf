@@ -14,6 +14,9 @@ resource "aws_instance" "test-instances" {
                 sudo chmod -R 775 labs
                 sudo labs/cloud/setup-user.sh
         EOF
-
+tags = {
+    Name = "test${count.index + 1}"
+    training = "devops"
+  }
   
 }
